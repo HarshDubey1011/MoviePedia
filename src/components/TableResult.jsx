@@ -8,6 +8,7 @@ const TableResult = ({ data }) => {
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
       }}

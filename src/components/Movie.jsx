@@ -7,7 +7,7 @@ import Table from "./TableResult";
 const Movie = () => {
   const [movieName, setMovieName] = useState("");
   const [actorName, setActorName] = useState("");
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState("y");
   const [selected, setSelected] = useState("");
   const [movieType, setMovieType] = useState([
     {

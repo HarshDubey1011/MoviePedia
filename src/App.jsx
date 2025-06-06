@@ -23,6 +23,7 @@ const App = (props) => {
       setVantaEffect(
         Birds({
           el: myRef.current,
+          resize: true,
         })
       );
     }
