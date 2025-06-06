@@ -12,10 +12,10 @@ logger.info("connecting to", config.MONGODB_URI);
 mongoose
   .connect(config.MONGODB_URI)
   .then((result) => {
-    console.log("connected to MongoDb");
+    logger.info("connected to mongodb");
   })
   .catch((error) => {
-    console.log(error, "error connecting to MongoDB");
+    logger.error(error, "error connecting to mongodb");
   });
 
 app.use(express.static("dist"));
